@@ -1,0 +1,70 @@
+/* styles.css */
+
+/* Keyframes for scrolling animation */
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* General styles */
+  .container-custom {
+    padding: 20px;
+    background-image: linear-gradient(to bottom right, rgb(255, 163, 163), rgb(255, 255, 200));
+    
+  }
+  
+  .card-custom {
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 25px;
+
+  
+  }
+  
+  .card-custom:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-img-custom {
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  .card-title-custom {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .card-text-custom {
+    color: #777;
+  }
+  
+  /* Animation on scroll */
+  .scroll-animation {
+    opacity: 0;
+    animation: fadeInUp 0.5s forwards;
+  }
+  
+  .scroll-animation-delay-1 {
+    animation-delay: 0.1s;
+  }
+  
+  .scroll-animation-delay-2 {
+    animation-delay: 0.2s;
+  }
+  
+  .scroll-animation-delay-3 {
+    animation-delay: 0.3s;
+  }
+  
+  .scroll-animation-delay-4 {
+    animation-delay: 0.4s;
+  }

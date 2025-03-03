@@ -1,7 +1,12 @@
 import './App.css'
-import Login from './Login';
+
 import { BrowserRouter,Routes, Route } from 'react-router-dom';
 import Home from './Home';
+import Service from './Service';
+import './Service.css'
+import Dish from './Dish';
+
+
 
 function App() {
 
@@ -13,7 +18,8 @@ function App() {
     
     <Routes>
       <Route path="/" element={<Home />}></Route>
-      <Route path="/login" element={<Login />} />
+      <Route path="/service" element={<Service />} />
+      <Route path="/dish" element={<Dish />} />
     </Routes>
     
     
